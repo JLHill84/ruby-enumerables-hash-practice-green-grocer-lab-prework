@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
   myHash = {}
-  cart.each do
+  cart.each do |item|
     
 end
 
