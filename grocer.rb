@@ -4,7 +4,14 @@ def consolidate_cart(cart)
     if myHash[item.key[0]]
       myHash[item.key[0]][:count] += 1
     else
-      myHash
+      myHash[item.key[0]] = {
+        count: 1,
+        price: item.values[0][:price],
+        clearance: item.values[0][:clearance]
+      }
+    end
+  end
+  new_hash
 end
 
 def apply_coupons(cart, coupons)
