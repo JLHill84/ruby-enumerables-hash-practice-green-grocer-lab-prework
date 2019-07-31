@@ -11,7 +11,7 @@ def consolidate_cart(cart)
       }
     end
   end
-  new_hash
+  myHash
 end
 
 def apply_coupons(cart, coupons)
