@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   myHash = {}
   cart.each do |item|
-    myHash 
+    if myHash[item.key] 
 end
 
 def apply_coupons(cart, coupons)
